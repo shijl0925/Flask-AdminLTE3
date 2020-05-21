@@ -5,8 +5,8 @@ from os import path
 here = path.abspath(path.dirname(__file__))
 
 # Get the long description from the relevant file
-with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
-    long_description = f.read()
+with open("README.md", "r") as fh:
+    long_description = fh.read()
 
 setuptools.setup(
     name='Flask-AdminLTE3',
@@ -15,6 +15,7 @@ setuptools.setup(
     author_email='kevin09254930sjl@gmail.com',
     description='Integration of Flask-Admin and AdminLTE3 template.',
     long_description=long_description,
+    long_description_content_type="text/markdown",
     url='https://github.com/shijl0925/Flask-AdminLTE3',
     license='MIT',
     packages=setuptools.find_packages(),
