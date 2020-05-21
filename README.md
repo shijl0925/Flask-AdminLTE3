@@ -3,7 +3,7 @@ AdminLTE3 Templates, Template Tags, and Admin Theme for Flask-Admin
 
 Flask-AdminLTE3 packages `AdminLTE3
 <http://www.almsaeedstudio.com/>`_ into an extension that mostly consists
-of a blueprint named 'adminlte'. It can also create links to serve AdminLTE and works with no boilerplate code in your application.
+of a blueprint named 'adminlte'. It can also create links to serve AdminLTE3 and works with no boilerplate code in your application.
 
 Installation
 ------------
@@ -21,14 +21,14 @@ Usage
 -----
 Here is an example:
 
-    from flask_adminlte import AdminLTE
+    from flask_adminlte3 import AdminLTE3
     
     [...]
     
-    AdminLTE()(app)
+    AdminLTE3()(app)
 
 
-    from flask_adminlte import AdminLTEModelView, AdminLTEFileAdmin
+    from flask_adminlte3 import AdminLTEModelView, AdminLTEFileAdmin
     class MyModelView(AdminLTEModelView):
         pass
 

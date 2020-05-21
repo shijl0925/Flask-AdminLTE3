@@ -3,7 +3,7 @@ from flask_admin.contrib.sqla import ModelView
 from flask_admin.contrib.fileadmin import FileAdmin
 
 
-class AdminLTE(object):
+class AdminLTE3(object):
     def __init__(self, app=None):
         if app is not None:
             self.init_app(app)
