@@ -48,10 +48,12 @@ Here is an example:
 
 
 base template myadmin/my_master.html code:
+
     {% extends 'adminlte3/base.html' %}
     [...]
 
 index template myadmin/my_index.html code:
+
     {% extends 'adminlte3/my_master.html' %}
     {% block body %}
     {{ super() }}
