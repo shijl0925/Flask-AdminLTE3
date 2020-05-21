@@ -1,0 +1,22 @@
+{% import 'admin/lib.html' as lib with context %}
+{% import 'adminlte3/adminlte/adminlte.html' as adminlte with context %}
+
+{% macro view_row(action, row_id, row) %}
+    {{ adminlte.action_view_button(action, row_id, row, modal=False) }}
+{% endmacro %}
+
+{% macro view_row_popup(action, row_id, row) %}
+    {{ adminlte.action_view_button(action, row_id, row, modal=True) }}
+{% endmacro %}
+
+{% macro edit_row(action, row_id, row) %}
+    {{ adminlte.action_edit_button(action, row_id, row, modal=False) }}
+{% endmacro %}
+
+{% macro edit_row_popup(action, row_id, row) %}
+    {{ adminlte.action_edit_button(action, row_id, row, modal=True) }}
+{% endmacro %}
+
+{% macro delete_row(action, row_id, row) %}
+    {{ adminlte.action_delete_button(action, row_id, row) }}
+{% endmacro %}
