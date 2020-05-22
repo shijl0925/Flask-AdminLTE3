@@ -64,16 +64,33 @@ index template myadmin/my_index.html code:
 This makes some new templates available, containing blank pages that include all
 bootstrap resources, and have predefined blocks where you can put your content.
 
+We provide the following parameters to modify the style of the software:
+
+    # cerulean, cosmo, cyborg, flatly, journal, litera, lumen, minty, sandstone, simplex, sketchy
+    FLASK_ADMIN_THEME
+    
+    # dark or light
+    FLASK_ADMIN_STYLE
+    
+    # True or False
+    FLASK_ADMIN_SMALL_TEXT
+    
+    # True or False
+    FLASK_ADMIN_NAV_FLAT
+    
+    # True or False
+    FLASK_ADMIN_SIDEBAR_DISABLE_EXPAND
+
 Screenshots
 -----------
 Admin Area:
     
-* Home :![admin screenshot](https://github.com/shijl0925/Flask-AdminLTE3/blob/master/screenshots/home.png)
+* Home :![admin screenshot](https://raw.githubusercontent.com/shijl0925/Flask-AdminLTE3/master/screenshots/home.png)
 
-* Demo Model :![model screenshot](https://github.com/shijl0925/Flask-AdminLTE3/blob/master/screenshots/demo-home.png)
+* Demo Model :![model screenshot](https://raw.githubusercontent.com/shijl0925/Flask-AdminLTE3/master/screenshots/demo-home.png)
 
-* Demo List Model: ![model list](https://github.com/shijl0925/Flask-AdminLTE3/blob/master/screenshots/demo-list.png)
+* Demo List Model: ![model list](https://raw.githubusercontent.com/shijl0925/Flask-AdminLTE3/master/screenshots/demo-list.png)
 
-* Demo Creating Model: ![model create](https://github.com/shijl0925/Flask-AdminLTE3/blob/master/screenshots/demo-create.png)
+* Demo Creating Model: ![model create](https://raw.githubusercontent.com/shijl0925/Flask-AdminLTE3/master/screenshots/demo-create.png)
 
-* Demo Editing Model: ![model edit](https://github.com/shijl0925/Flask-AdminLTE3/blob/master/screenshots/demo-edit.png)
+* Demo Editing Model: ![model edit](https://raw.githubusercontent.com/shijl0925/Flask-AdminLTE3/master/screenshots/demo-edit.png)
