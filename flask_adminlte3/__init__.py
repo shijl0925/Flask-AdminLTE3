@@ -11,6 +11,7 @@ class AdminLTE3(object):
     def init_app(self, app):
         if not hasattr(app, 'extensions'):
             app.extensions = {}
+        app.extensions['adminlte'] = self
 
         blueprint = Blueprint('adminlte',
                               __name__,
@@ -20,7 +21,12 @@ class AdminLTE3(object):
 
         app.register_blueprint(blueprint)
 
-        app.extensions['adminlte'] = self
+        # theme: cerulean, cosmo, cyborg, flatly, journal, litera, lumen, minty, sandstone, simplex, sketchy
+        app.config.setdefault('FLASK_ADMIN_THEME', 'default')
+        app.config.setdefault('FLASK_ADMIN_STYLE', 'dark')
+        app.config.setdefault('FLASK_ADMIN_SMALL_TEXT', False)
+        app.config.setdefault('FLASK_ADMIN_NAV_FLAT', False)
+        app.config.setdefault('FLASK_ADMIN_SIDEBAR_DISABLE_EXPAND', False)
 
 
 class AdminLTEModelView(ModelView):
