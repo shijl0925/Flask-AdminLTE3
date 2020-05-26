@@ -69,16 +69,16 @@ We provide the following parameters to modify the style of the software:
     # cerulean, cosmo, cyborg, flatly, journal, litera, lumen, minty, sandstone, simplex, sketchy
     FLASK_ADMIN_THEME
     
-    # dark or light
+    # dark or light Sidebar Variants
     FLASK_ADMIN_STYLE
     
-    # True or False
+    # True or False, Body small text
     FLASK_ADMIN_SMALL_TEXT
     
-    # True or False
+    # True or False, Sidebar nav flat style
     FLASK_ADMIN_NAV_FLAT
     
-    # True or False
+    # True or False, Main Sidebar disable or not 
     FLASK_ADMIN_SIDEBAR_DISABLE_EXPAND
 
 Screenshots
