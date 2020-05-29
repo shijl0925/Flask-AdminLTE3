@@ -25,15 +25,15 @@ Here is an example:
     
     [...]
     
-    AdminLTE3()(app)
+    AdminLTE3(app)
 
 
     from flask_adminlte3 import AdminLTEModelView, AdminLTEFileAdmin
     class MyModelView(AdminLTEModelView):
-        pass
+        [...]
 
     class MyFileAdmin(AdminLTEFileAdmin):
-        pass
+        [...]
 
     class MyAdminIndexView(AdminIndexView):
         @expose('/', methods=['GET', 'POST'])
