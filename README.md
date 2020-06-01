@@ -24,7 +24,7 @@ Here is an example:
     
     [...]
     
-    AdminLTE3()(app)
+    AdminLTE3(app)
 
 This makes some new templates available, containing blank pages that include all
 bootstrap resources, and have predefined blocks where you can put your content.
