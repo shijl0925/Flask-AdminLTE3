@@ -10,10 +10,10 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name='Flask-AdminLTE3',
-    version='1.0.1',
+    version='3.0.5',
     author='Jialiang Shi',
     author_email='kevin09254930sjl@gmail.com',
-    description='Integration of Flask-Admin and AdminLTE3 template.',
+    description='An extension that includes AdminLTE3 in your project, without any boilerplate code.',
     long_description=long_description,
     long_description_content_type="text/markdown",
     url='https://github.com/shijl0925/Flask-AdminLTE3',
@@ -23,7 +23,6 @@ setuptools.setup(
     include_package_data=True,
     platforms='any',
     install_requires=[
-        'flask-admin@https://github.com/flask-admin/flask-admin/archive/bootstrap4.zip',
         'Flask>=0.8',
     ],
     classifiers=[
