@@ -2,8 +2,7 @@
 
 
 Flask-AdminLTE3 packages [AdminLTE3](https://adminlte.io/themes/dev/AdminLTE/index.html) into an extension that mostly consists
-of a blueprint named 'adminlte'. It can also create links to serve AdminLTE
-from a CDN and works with no boilerplate code in your application.
+of a blueprint named 'adminlte'. It is Admin Theme for Flask-Admin.
 
 ## Installation
 
@@ -25,18 +24,6 @@ Here is an example:
     [...]
     
     AdminLTE3(app)
-
-This makes some new templates available, containing blank pages that include all
-bootstrap resources, and have predefined blocks where you can put your content.
-    
-
-## Screenshots
-
-Admin Area:
-    
-* Home :![admin screenshot](https://raw.githubusercontent.com/shijl0925/Flask-AdminLTE3/master/screenshots/home.png)
-
-* Demo Model :![model screenshot](https://raw.githubusercontent.com/shijl0925/Flask-AdminLTE3/master/screenshots/demo-home.png)
 
 
 ## Admin Theme for Flask-Admin
