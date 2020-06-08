@@ -30,7 +30,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="card">
-                    <div class="card-header with-border">
+                    <div class="card-header">
                         {% block model_menu_bar %}
                             {% if admin_view.can_create %}
                                 {# todo: need refactor here#}
@@ -173,8 +173,7 @@
                                 </table>
                             </div>
                         {% endblock %}
-                    </div>
-                    <div class="card-footer">
+
                         {% block list_pager %}
                             {% if num_pages is not none %}
                                 {{ lib.pager(page, num_pages, pager_url) }}

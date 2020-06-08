@@ -8,7 +8,7 @@
         </button>
 
     {% else %}
-        <h3 class="box-title">{% if icon %}<i class="{{ icon }}"></i> {% endif %}{{ header }}</h3>
+        <h3 class="card-title">{% if icon %}<i class="{{ icon }}"></i> {% endif %}{{ header }}</h3>
     {% endif %}
 {% endmacro %}
 
@@ -96,9 +96,9 @@
 {% endmacro %}
 
 {% macro form(header, icon, form, form_opts, cancel_url, action=None, has_more=False, is_modal=False) %}
+    {% if is_modal %}{% set type='modal' %}{% else %}{% set type='card' %}{% endif %}
+    <div class="{{ type }}-header">{{ form_header(header, icon, is_modal) }}</div>
     {% call form_tag(action=action) %}
-        {% if is_modal %}{% set type='modal' %}{% else %}{% set type='card' %}{% endif %}
-        <div class="{{ type }}-header {% if not is_modal %}with-border{% endif %}" style="vertical-align: middle;">{{ form_header(header, icon, is_modal) }}</div>
         <div class="{{ type }}-body">{{ form_body(form, form_opts) }}</div>
         <div class="{{ type }}-footer">{{ form_footer(cancel_url, has_more, is_modal) }}</div>
     {% endcall %}

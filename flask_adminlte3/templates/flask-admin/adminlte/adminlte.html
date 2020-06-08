@@ -104,13 +104,13 @@
             <div class="input-group input-group-sm" style="width: 200px">
                 <input type="text" name="search" value="{{ search }}" class="form-control pull-right"
                        placeholder="{{ _gettext('%(placeholder)s', placeholder=search_placeholder) }}">
-                <div class="input-group-btn">
+                <div class="input-group-append">
+                    <button type="submit" title="Search" class="btn btn-sm btn-default">
+                        <i class="fa fa-search"></i>
+                    </button>
                     <button type="button" onclick="location.href='{{ clear_search_url }}'" title="Reset"
                             class="btn btn-sm btn-warning">
                         <i class="fa fa-ban"></i>
-                    </button>
-                    <button type="submit" title="Search" class="btn btn-sm btn-default">
-                        <i class="fa fa-search"></i>
                     </button>
                 </div>
             </div>
@@ -118,7 +118,7 @@
             <div class="input-group input-group-sm" style="width: 200px">
                 <input type="text" name="search" value="" class="form-control pull-right"
                        placeholder="{{ _gettext('%(placeholder)s', placeholder=search_placeholder) }}">
-                <div class="input-group-btn">
+                <div class="input-group-append">
                     <button type="submit" class="btn btn-sm btn-default">
                         <i class="fa fa-search"></i>
                     </button>
