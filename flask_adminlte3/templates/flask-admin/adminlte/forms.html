@@ -58,7 +58,7 @@
 {% macro form_search(search_class='pull-right col-md-4', search_style='') %}
     <div class="{{ search_class }}" style="display: inline-block; vertical-align: middle; {{ search_style }}">
         <div class="input-group input-group-sm input-prepend">
-            <div class="input-group-btn">
+            <div class="input-group-append">
                 <span class="add-on btn btn-default btn-sm">{{ _gettext('Filter') }}</span>
             </div>
             <input id="fa_filter" class="form-control pull-left" type="text">
