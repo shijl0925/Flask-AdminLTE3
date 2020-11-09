@@ -23,7 +23,7 @@ setuptools.setup(
     include_package_data=True,
     platforms='any',
     install_requires=[
-        'flask-admin@https://github.com/flask-admin/flask-admin/archive/bootstrap4.zip',
+        'flask-admin',
         'Flask>=0.8',
     ],
     classifiers=[
