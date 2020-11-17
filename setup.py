@@ -10,7 +10,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name='Flask-AdminLTE3',
-    version='1.0.2',
+    version='1.0.3',
     author='Jialiang Shi',
     author_email='kevin09254930sjl@gmail.com',
     description='AdminLTE3 Theme for Flask-Admin.',
@@ -23,7 +23,7 @@ setuptools.setup(
     include_package_data=True,
     platforms='any',
     install_requires=[
-        'flask-admin',
+        'flask-admin>=1.5.7',
         'Flask>=0.8',
     ],
     classifiers=[
