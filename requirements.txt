@@ -1,0 +1,2 @@
+flask-admin>=1.5.7
+Flask>=0.8
