@@ -1,7 +1,5 @@
 __version__ = '1.0.2'
 from flask import Blueprint
-from flask_admin.contrib.sqla import ModelView
-from flask_admin.contrib.fileadmin import FileAdmin
 
 
 class AdminLTE3(object):
