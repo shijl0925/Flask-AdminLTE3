@@ -1,6 +1,12 @@
 {% import 'admin/lib.html' as lib with context %}
 {% import 'flask-admin/adminlte/adminlte.html' as adminlte with context %}
 
+{% macro link(action, url, icon_class=None) %}
+<a class="btn btn-primary btn-xs" href="{{ url }}" title="{{ action.title or '' }}">
+  <span class="{{ icon_class or action.icon_class }}"></span>
+</a>
+{% endmacro %}
+
 {% macro view_row(action, row_id, row) %}
     {{ adminlte.action_view_button(action, row_id, row, modal=False) }}
 {% endmacro %}
