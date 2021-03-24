@@ -21,24 +21,21 @@
       <link rel="stylesheet" href="{{ adminlte_static.url('plugins/fontawesome-free/css/all.min.css') }}">
       <!-- Ionicons -->
       <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-      <!-- Tempusdominus Bbootstrap 4 -->
+      <!-- Tempusdominus Bootstrap 4 -->
       <link rel="stylesheet" href="{{ adminlte_static.url('plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css') }}">
       <link rel="stylesheet" href="{{ adminlte_static.url('plugins/select2/css/select2.min.css') }}" rel="stylesheet" type="text/css">
       <!-- iCheck -->
       <link rel="stylesheet" href="{{ adminlte_static.url('plugins/icheck-bootstrap/icheck-bootstrap.min.css') }}">
       <!-- JQVMap -->
       <link rel="stylesheet" href="{{ adminlte_static.url('plugins/jqvmap/jqvmap.min.css') }}">
+      <!-- Theme style -->
+      <link rel="stylesheet" href="{{ adminlte_static.url('dist/css/adminlte.css') }}">
       <!-- overlayScrollbars -->
       <link rel="stylesheet" href="{{ adminlte_static.url('plugins/overlayScrollbars/css/OverlayScrollbars.min.css') }}">
       <!-- Daterange picker -->
       <link rel="stylesheet" href="{{ adminlte_static.url('plugins/daterangepicker/daterangepicker.css') }}">
       <!-- summernote -->
-      <link rel="stylesheet" href="{{ adminlte_static.url('plugins/summernote/summernote-bs4.css') }}">
-
-      <link rel="stylesheet" href="{{ adminlte_static.url('dist/css/adminlte.css') }}">
-
-      <!-- Google Font: Source Sans Pro -->
-      <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+      <link rel="stylesheet" href="{{ adminlte_static.url('plugins/summernote/summernote-bs4.min.css') }}">
 
       <link href="{{ admin_static.url(filename='admin/css/bootstrap4/admin.css', v='1.1.1') }}" rel="stylesheet">
       <link href="{{ admin_static.url(filename='bootstrap/bootstrap4/css/font-awesome.min.css', v='4.7.0') }}" rel="stylesheet">
@@ -66,6 +63,9 @@
 <body class="hold-transition sidebar-mini layout-fixed">
 {% block page_body %}
 <div class="wrapper">
+  {% block preloader %}
+  {% endblock %}
+
   <nav class="main-header navbar navbar-expand navbar-white navbar-light">
     <ul class="navbar-nav">
       <li class="nav-item">
