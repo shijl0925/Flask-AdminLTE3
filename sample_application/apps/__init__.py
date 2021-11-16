@@ -1,6 +1,6 @@
 import os
 from flask import Flask
-from apps.extensions import adminlte, adminlte_base
+from apps.extensions import adminlte
 from apps.controller.admin import admin
 from apps.views import init_blue_print
 from apps.config import config
@@ -13,7 +13,6 @@ def create_app(env=None):
     app_.config.from_object(config.get(env))
     admin.init_app(app_)
     adminlte.init_app(app_)
-    adminlte_base.init_app(app_)
     init_blue_print(app_)
     return app_
 

@@ -8,5 +8,5 @@ index_bp = flask.Blueprint('index', __name__, url_prefix='/')
 
 @index_bp.route('/', methods=['GET'])
 def index_home():
-    return flask.render_template('home.html')
+    return flask.redirect(flask.url_for("admin.index"))
 
