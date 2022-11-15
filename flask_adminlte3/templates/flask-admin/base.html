@@ -60,13 +60,13 @@
   {% endblock head_tail %}
 </head>
 
-<body class="control-sidebar-slide-open {% if config.get('FLASK_ADMINLTE_SIDEBAR_MINI', True) %}sidebar-mini{% endif %} {% if config.get('FLASK_ADMINLTE_SIDEBAR_FIXED', True) %}layout-fixed{% endif %} {% if config.get('FLASK_ADMINLTE_TEXT_SM', False) %}text-sm{% endif %} {% if config.get('FLASK_ADMINLTE_SIDEBAR_COLLAPSE', False) %}sidebar-collapse{% endif %} {% if config.get('FLASK_ADMINLTE_DARK_MODE', False) %}dark-mode{% endif %} {% if config.get('FLASK_ADMINLTE_NAVBAR_FIXED', False) %}layout-navbar-fixed{% endif %} {% if config.get('FLASK_ADMINLTE_FOOTER_FIXED', False) %}layout-footer-fixed{% endif %}">
+<body class="{{ config.get('FLASK_ADMINLTE_LAYOUT_OPTIONS', [])| join(' ') }}">
 {% block page_body %}
 <div class="wrapper">
   {% block preloader %}
   {% endblock %}
 
-  <nav class="main-header navbar navbar-expand {% if config.get('FLASK_ADMINLTE_NARBAR_DARK_MODE', False) %}navbar-dark{% else %}navbar-white navbar-light{% endif %}">
+  <nav class="{{ config.get('FLASK_ADMINLTE_NAVBAR_OPTIONS', [])| join(' ') }}">
     <ul class="navbar-nav">
       <li class="nav-item">
         <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
@@ -114,7 +114,7 @@
 
       {% block main_menu %}
       <nav class="mt-2">
-        <ul class="nav nav-pills nav-sidebar flex-column {% if config.get('FLASK_ADMINLTE_MAV_LEGACY', False) %}nav-legacy{% endif %}" data-widget="treeview" role="menu" data-accordion="false">
+        <ul class="nav nav-pills nav-sidebar flex-column {% if config.get('FLASK_ADMINLTE_NAV_LEGACY', False) %}nav-legacy{% endif %}" data-widget="treeview" role="menu" data-accordion="false">
           {{ adminlte_layout.menu() }}
         </ul>
       </nav>
