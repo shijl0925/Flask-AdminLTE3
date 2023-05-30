@@ -1,3 +1,8 @@
+
+[![Total downloads](https://static.pepy.tech/badge/flask-adminlte3)](https://pepy.tech/project/flask-adminlte3)
+[![Month downloads](https://static.pepy.tech/badge/flask-adminlte3/month)](https://pepy.tech/project/flask-adminlte3)
+
+
 # Flask-AdminLTE3
 
 
